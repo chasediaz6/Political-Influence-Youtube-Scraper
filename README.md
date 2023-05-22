@@ -1,2 +1,52 @@
-# Politician-Youtube-Scraper
-Modeling political influence through media outlet appearances
+# Political-Influence-Youtube-Scraper
+This project is a YouTube search results scraper designed to analyze and model the influences on local-level politicians based on their media appearances. The goal is to extract insights from YouTube search results, including captions from each video, in order to understand the influences shaping a politician's legislative agenda, media engagement, and policy priorities.
+
+## Project Overview
+The main objective of this project is to retrieve YouTube search results for a specific politician and utilize Natural Language Processing (NLP) techniques to extract meaningful information from the captions of each video. The manual process of collecting and analyzing this data for even a single politican would be extremely time-consuming. However, by automating the data retrieval and analysis tasks, we significantly reduce the time and effort required to generate these insights. By analyzing the text captions and search results data, we can identify patterns and generate summary statistics on the following aspects:
+
+1. Media Appearances: Determine the outlets where the politician appears most frequently. The scraper retrieves the top search results for each politician and scrapes available data for each video, including the video title, description, statistics, and the channel it was posted from. This information helps understand which media platforms are influencing the politician's public presence.
+
+2. Identify Influences: Identify the topics and legislation that a politician frequently discusses in their media appearances. This analysis provides insights into their legislative agenda and policy priorities. By parsing the captions from each video (where available), the code identifies the most common entities discussed using Named Entity Recognition (NER) using the spacy library. These frequently discussed topics represent potential influences. Users can provide a list of keywords as parameters to the **fill** function to identify which videos contain the given keywords. This functionality allows for quick identification of videos that mention specific topics or legislation of interest.
+
+3. Reach Analysis: Assess the extent of the politician's reach by examining the number of views, engagement metrics, or other relevant indicators. This information helps gauge the visibility and impact of their media appearances, and can be used for comparison to other politicians.
+
+### Insights and Analysis
+The project also provides code to generate insights from the YouTube data collected by the scraper:
+
+* Video + Channel Statistics: The project generates a dataframe detailing the data for each video from the scraped YouTube search results. This allows users to identify the channels where a politician appears most frequently, along with the number of views and subscribers for each channel. Additionally, two plots are generated: one visualizing the total views for each channel and another visualizing the number of views for the top 10 most viewed videos from the search results.
+
+* Topic Modeling: Using the Top2Vec Python library, the project implements a topic model on the scraped data. The topic model clusters the words and phrases used in the video captions to identify specific topics. The resulting list of topics includes associated keywords that frequently appear within each topic.
+
+* Topic Model Word Cloud: A visual representation of the popular words for each topic recognized by the topic model. The size of each word in the word cloud corresponds to its frequency and relevance in specifying the topic.
+
+### Data Output
+* Search Results: This dataset contains the top 25 YouTube search results for each politician, including video titles, descriptions, channel names, video and channel statistics (views, subscribers), and video links. This dataset enables further investigation into each politician's media appearances.
+
+* Keywords Found: This dataset demonstrates the usage of keywords (such as "climate," "emissions," and "renewable energy") to identify specific topics in each YouTube video. It shows which videos contain the given keywords, allowing users to pinpoint relevant videos quickly.
+
+* Entities: This dataset presents the most commonly recognized entities extracted using the NER model from the search results of the 10 politicians. Entities such as names, organizations, or legislation related to each politician's media appearances are listed. These entities can indicate influences, and further investigation is recommended for previously unknown influences.
+
+### Key Libraries and Techniques Used
+The project relies on the following libraries and techniques:
+
+* [YouTube Data API](https://developers.google.com/youtube/v3): Utilizes the YouTube Data API to search for videos and retrieve relevant metadata, including captions.
+
+* Natural Language Processing (NLP): NLP libraries [spacy](https://spacy.io/api/doc) and [top2vec](https://top2vec.readthedocs.io/en/latest/) are used to process the text data extracted from the video captions. These libraries enable various NLP tasks such as text preprocessing, topic modeling, sentiment analysis, and more.
+
+## How to Use the Project
+To use this YouTube search results scraper for politicians' media appearances, follow these steps:
+
+1. Obtain API Credentials: Obtain the necessary API credentials from the YouTube Data API by creating a project and enabling the YouTube Data API v3.
+
+2. Set Up the Environment: Set up a Python environment with the required dependencies, including spacy and top2vec.
+
+3. Configure the Project: Configure the project by specifying the politician's name, search parameters, and any other relevant settings.
+
+4. Run the Scraper: Execute the YouTube search results scraper script, which will make API requests, retrieve search results, and extract captions from the videos.
+
+5. Perform NLP Analysis: Process the text data using NLP techniques such as text preprocessing, topic modeling, or sentiment analysis. Generate summary statistics based on the insights derived from the analysis.
+
+6. Interpret the Results: Interpret the summary statistics to gain a comprehensive understanding of the politician's media appearances, influences, and reach.
+
+## Conclusion
+By utilizing the YouTube search results scraper and NLP techniques, this project aims to provide valuable insights into the influences on local-level politicians from their media appearances. The analysis of captions and subsequent generation of summary statistics can help researchers, policymakers, and the general public quikckly understand the media landscape surrounding specific politicians and the topics they frequently discuss.
