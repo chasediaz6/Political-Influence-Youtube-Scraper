@@ -19,6 +19,7 @@ By retrieving YouTube search results for a specific politician and utilizing Nat
 The project also provides code to generate insights from the YouTube data collected by the scraper:
 
 * Video + Channel Statistics: The project generates a dataframe detailing the data for each video from the scraped YouTube search results. This allows users to identify the channels where a politician appears most frequently, along with the number of views and subscribers for each channel. Additionally, two plots are generated: one visualizing the total views for each channel and another visualizing the number of views for the top 10 most viewed videos from the search results.
+* ![video stats](https://github.com/chasediaz6/Political-Influence-Youtube-Scraper/assets/52427910/f0309363-520a-4b4a-ba64-5c04b2b95484)
 
 * Topic Modeling: Using the Top2Vec Python library, the project implements a topic model on the scraped data. The topic model clusters the words and phrases used in the video captions to identify specific topics. The resulting list of topics includes associated keywords that frequently appear within each topic.
 ![topic model keywords](https://github.com/chasediaz6/Political-Influence-Youtube-Scraper/assets/52427910/fd084bf3-369a-4ab9-9bae-72467b0987e8)
