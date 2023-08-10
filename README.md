@@ -29,7 +29,7 @@ The project also provides code to generate insights from the YouTube data collec
 ### Key Libraries and Techniques Used
 The project relies on the following libraries and techniques:
 
-* [YouTube Data API](https://developers.google.com/youtube/v3): Utilizes the YouTube Data API to search for videos and retrieve relevant metadata, including captions.
+* [YouTube Data API](https://developers.google.com/youtube/v3): Utilizes the YouTube Data API to search for videos and retrieve relevant metadata, including captions. A API key will be needed to access the API. 
 
 * Natural Language Processing (NLP): NLP libraries [spacy](https://spacy.io/api/doc) and [top2vec](https://top2vec.readthedocs.io/en/latest/) are used to process the text data extracted from the video captions. These libraries enable various NLP tasks such as text preprocessing, topic modeling, sentiment analysis, and more.
 
@@ -49,4 +49,7 @@ To use this YouTube search results scraper for politicians' media appearances, f
 6. Interpret the Results: Interpret the summary statistics to gain a comprehensive understanding of the politician's media appearances, influences, and reach.
 
 ## Conclusion
+The results generated from the topic models yielded consistent results comapred to the manual analysis conducted for each of the 3 local-level politicians. With this, the scraper and code in yt_scraper.ipynb can accurately describe the influences shaping a politicians legislative agenda. This automated analysis can save plenty of time and effort versus conducting it manually, and does so in an un-biased, objective manner. 
+
 By utilizing the YouTube search results scraper and NLP techniques, this project aims to provide valuable insights into the influences on local-level politicians from their media appearances. The analysis of captions and subsequent generation of summary statistics can help researchers, policymakers, and the general public quikckly understand the media landscape surrounding specific politicians and the topics they frequently discuss.
+
