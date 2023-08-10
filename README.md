@@ -57,7 +57,7 @@ To use this YouTube search results scraper for politicians' media appearances, f
 6. Interpret the Results: Interpret the summary statistics to gain a comprehensive understanding of the politician's media appearances, influences, and reach.
 
 ## Conclusion
-The results generated from the topic models yielded consistent results comapred to the manual analysis conducted for each of the 3 local-level politicians. With this, the scraper and code in yt_scraper.ipynb can accurately describe the influences shaping a politicians legislative agenda. This automated analysis can save plenty of time and effort versus conducting it manually, and does so in an un-biased, objective manner. 
+The results generated from the topic models yielded consistent results comapred to the manual analysis conducted for each of the 3 local-level politicians. With this, the scraper and code in yt_scraper.ipynb can accurately describe the influences shaping a politicians legislative agenda. This automated analysis can save plenty of time and effort versus conducting it manually, and does so objectively. 
 
 By utilizing the YouTube search results scraper and NLP techniques, this project aims to provide valuable insights into the influences on local-level politicians from their media appearances. The analysis of captions and subsequent generation of summary statistics can help researchers, policymakers, and the general public quikckly understand the media landscape surrounding specific politicians and the topics they frequently discuss.
 
