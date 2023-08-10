@@ -1,5 +1,5 @@
 # Political-Influence-Youtube-Scraper
-![Topic Model Word Cloud](https://github.com/chasediaz6/Political-Influence-Youtube-Scraper/assets/52427910/35b052b9-905b-4fc8-a595-4e8b71d97cdb)
+![word cloud](https://github.com/chasediaz6/Political-Influence-Youtube-Scraper/assets/52427910/e2edd216-5c66-411e-8705-46f8d4846fd1)
 
 The goal of this project is to model the influences shaping a given local-level politicians’ legislative agenda from their media appearances. To accomplish this, Python code was developed to scrape YouTube search results for a given politician and extract meaningful information from each media appearance. **This includes highlighting the outlets they are most frequently appearing on, the topics and legislation they are frequently discussing, and describing the extent of their reach**. This scraper enables users to automate the data collection to quickly gain these insights for any politician, which would otherwise be extremely time- consuming to complete manually.
 
