@@ -1,14 +1,19 @@
 # Political-Influence-Youtube-Scraper
+![Topic Model Word Cloud](https://github.com/chasediaz6/Political-Influence-Youtube-Scraper/assets/52427910/35b052b9-905b-4fc8-a595-4e8b71d97cdb)
+
 The goal of this project is to model the influences shaping a given local-level politicians’ legislative agenda from their media appearances. To accomplish this, Python code was developed to scrape YouTube search results for a given politician and extract meaningful information from each media appearance. **This includes highlighting the outlets they are most frequently appearing on, the topics and legislation they are frequently discussing, and describing the extent of their reach**. This scraper enables users to automate the data collection to quickly gain these insights for any politician, which would otherwise be extremely time- consuming to complete manually.
 
 ## Project Overview
 By retrieving YouTube search results for a specific politician and utilizing Natural Language Processing (NLP) techniques, we can extract meaningful information from the captions of each video. The manual process of collecting and analyzing this data for even a single politican would be extremely time-consuming. However, by automating the data retrieval and analysis tasks, we significantly reduce the time and effort required to generate these insights. By analyzing the text captions and search results data, we can identify patterns and generate summary statistics on the following aspects:
 
 1. Media Appearances: Determine the outlets where the politician appears most frequently. The scraper retrieves the top search results for each politician and scrapes available data for each video, including the video title, description, statistics, and the channel it was posted from. This information helps understand which media platforms are influencing the politician's public presence.
+![media appearnces](https://github.com/chasediaz6/Political-Influence-Youtube-Scraper/assets/52427910/b7a8315b-13bd-4de4-8836-8ed5636a3751)
 
 2. Identify Influences: Identify the topics and legislation that a politician frequently discusses in their media appearances. This analysis provides insights into their legislative agenda and policy priorities. By parsing the captions from each video (where available), the code identifies the most common entities discussed using Named Entity Recognition (NER) using the spacy library. These frequently discussed topics represent potential influences. Users can provide a list of keywords as parameters to the **fill** function to identify which videos contain the given keywords. This functionality allows for quick identification of videos that mention specific topics or legislation of interest.
+![keywords found](https://github.com/chasediaz6/Political-Influence-Youtube-Scraper/assets/52427910/970d1d71-6768-4810-9289-6b536615773f)
 
 3. Reach Analysis: Assess the extent of the politician's reach by examining the number of views, engagement metrics, or other relevant indicators. This information helps gauge the visibility and impact of their media appearances, and can be used for comparison to other politicians.
+
 
 ### Insights and Analysis
 The project also provides code to generate insights from the YouTube data collected by the scraper:
@@ -16,8 +21,11 @@ The project also provides code to generate insights from the YouTube data collec
 * Video + Channel Statistics: The project generates a dataframe detailing the data for each video from the scraped YouTube search results. This allows users to identify the channels where a politician appears most frequently, along with the number of views and subscribers for each channel. Additionally, two plots are generated: one visualizing the total views for each channel and another visualizing the number of views for the top 10 most viewed videos from the search results.
 
 * Topic Modeling: Using the Top2Vec Python library, the project implements a topic model on the scraped data. The topic model clusters the words and phrases used in the video captions to identify specific topics. The resulting list of topics includes associated keywords that frequently appear within each topic.
+![Topic Model Keywords](https://github.com/chasediaz6/Political-Influence-Youtube-Scraper/assets/52427910/5e6cb148-738c-48be-b3c7-7839460e0981)
 
 * Topic Model Word Cloud: A visual representation of the popular words for each topic recognized by the topic model. The size of each word in the word cloud corresponds to its frequency and relevance in specifying the topic.
+![word cloud](https://github.com/chasediaz6/Political-Influence-Youtube-Scraper/assets/52427910/fcaccc84-28d0-4b85-8c31-611529db2696)
+
 
 ### Data Output
 * Search Results: This dataset contains the top 25 YouTube search results for each politician, including video titles, descriptions, channel names, video and channel statistics (views, subscribers), and video links. This dataset enables further investigation into each politician's media appearances.
