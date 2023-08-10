@@ -10,7 +10,7 @@ By retrieving YouTube search results for a specific politician and utilizing Nat
 ![channel stats](https://github.com/chasediaz6/Political-Influence-Youtube-Scraper/assets/52427910/5c78b354-0427-4ae7-9eb5-d07f5838404f)
 
 2. Identify Influences: Identify the topics and legislation that a politician frequently discusses in their media appearances. This analysis provides insights into their legislative agenda and policy priorities. By parsing the captions from each video (where available), the code identifies the most common entities discussed using Named Entity Recognition (NER) using the spacy library. These frequently discussed topics represent potential influences. Users can provide a list of keywords as parameters to the **fill** function to identify which videos contain the given keywords. This functionality allows for quick identification of videos that mention specific topics or legislation of interest.
-
+![keywords_found](https://github.com/chasediaz6/Political-Influence-Youtube-Scraper/assets/52427910/8ada9a1b-b5f5-4268-987b-0783b7148eae)
 
 3. Reach Analysis: Assess the extent of the politician's reach by examining the number of views, engagement metrics, or other relevant indicators. This information helps gauge the visibility and impact of their media appearances, and can be used for comparison to other politicians.
 
@@ -24,8 +24,7 @@ The project also provides code to generate insights from the YouTube data collec
 ![topic model keywords](https://github.com/chasediaz6/Political-Influence-Youtube-Scraper/assets/52427910/fd084bf3-369a-4ab9-9bae-72467b0987e8)
 
 * Topic Model Word Cloud: A visual representation of the popular words for each topic recognized by the topic model. The size of each word in the word cloud corresponds to its frequency and relevance in specifying the topic.
-![word cloud](https://github.com/chasediaz6/Political-Influence-Youtube-Scraper/assets/52427910/fcaccc84-28d0-4b85-8c31-611529db2696)
-
+![word cloud](https://github.com/chasediaz6/Political-Influence-Youtube-Scraper/assets/52427910/e2edd216-5c66-411e-8705-46f8d4846fd1)
 
 ### Data Output
 * Search Results: This dataset contains the top 25 YouTube search results for each politician, including video titles, descriptions, channel names, video and channel statistics (views, subscribers), and video links. This dataset enables further investigation into each politician's media appearances.
